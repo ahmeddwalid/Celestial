@@ -20,11 +20,11 @@ fun NavigationManager(
         composable("login_screen") {
             LoginScreen(navController)
         }
-        composable("signup_screen") {
-            SignUpScreen(navController)
-        }
-        composable("home") {
-            HomeScreen(navController)
-        }
+//        composable("signup_screen") {
+//            SignUpScreen(navController)
+//        }
+//        composable("home") {
+//            HomeScreen(navController)
+//        }
     }
 }
