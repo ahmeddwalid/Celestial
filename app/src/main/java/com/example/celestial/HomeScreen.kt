@@ -26,6 +26,8 @@ fun HomeScreen(navController: NavController) {
                 .fillMaxSize()
         ) {
 
+            SpaceShip()
+
             Box(
                 modifier = Modifier
                     .fillMaxSize()

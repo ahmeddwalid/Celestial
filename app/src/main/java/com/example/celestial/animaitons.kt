@@ -24,3 +24,15 @@ fun KawkabBylef() {
         iterations = LottieConstants.IterateForever
     )
 }
+
+@Composable
+fun SpaceShip() {
+    val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.makukfada2))
+    val progress by animateLottieCompositionAsState(composition)
+    LottieAnimation(
+        modifier = Modifier.size(500.dp),
+        composition = composition,
+        iterations = LottieConstants.IterateForever
+    )
+}
+
