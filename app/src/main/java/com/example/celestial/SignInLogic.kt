@@ -7,9 +7,7 @@ import androidx.lifecycle.ViewModel
 
 class SignInLogic : ViewModel() {
     private val validCredentials = mapOf(
-        "ahmed@gmail.com" to "FinjanA",
-        "noureen@gmail.com" to "FinjanN",
-        "shahd@gmail.com" to "FinjanS"
+        "mina@gmal.com" to "passgamed",
     )
 
     var email by mutableStateOf("")

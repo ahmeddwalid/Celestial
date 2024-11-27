@@ -48,7 +48,7 @@ fun LoginScreen(navController: NavController) {
             value = usernameOrEmail.value,
             onValueChange = { usernameOrEmail.value = it },
             label = { Text("Username or Email") },
-            modifier = Modifier.fillMaxSize().padding(bottom = 16.dp)
+            modifier = Modifier.padding(bottom = 16.dp)
         )
 
         // Password field
@@ -56,7 +56,7 @@ fun LoginScreen(navController: NavController) {
             value = password.value,
             onValueChange = { password.value = it },
             label = { Text("Password") },
-            modifier = Modifier.fillMaxSize().padding(bottom = 16.dp),
+            modifier = Modifier.padding(bottom = 16.dp),
             visualTransformation = PasswordVisualTransformation() // Hide password text
         )
 

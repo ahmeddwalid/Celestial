@@ -4,6 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.finjan.ui.screens.authentication.SignupScreen
 
 @Composable
 fun NavigationManager(
@@ -20,11 +21,12 @@ fun NavigationManager(
         composable("login_screen") {
             LoginScreen(navController)
         }
-//        composable("signup_screen") {
-//            SignUpScreen(navController)
-//        }
-//        composable("home") {
-//            HomeScreen(navController)
-//        }
+        composable("signup_screen") {
+            val SignInLogic = androidx.lifecycle.viewmodel.compose.viewModel<SignInLogic>()
+            SignupScreen(navController, SignInLogic)
+        }
+        composable("home") {
+            HomeScreen(navController)
+        }
     }
 }

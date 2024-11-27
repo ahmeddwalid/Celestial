@@ -28,7 +28,7 @@ import kotlinx.coroutines.delay
 fun SplashScreen(navController: NavController) {
     LaunchedEffect(key1 = true) {
         delay(3000)
-        navController.navigate("page_view_screen")
+        navController.navigate("login_screen")
     }
     CelestialTheme {
         Column (
