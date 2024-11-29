@@ -1,4 +1,4 @@
-package com.example.Celestial.loginlogic
+package com.example.celestial
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

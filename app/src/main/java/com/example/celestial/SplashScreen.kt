@@ -12,8 +12,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.example.Celestial.animations.KawkabBylef
-import com.example.celestial.theme.theme.CelestialTheme
+import com.example.celestial.theme.CelestialTheme
 
 
 import kotlinx.coroutines.delay

@@ -16,9 +16,9 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.example.Celestial.uicomponents.AppTextField
-import com.example.Celestial.uicomponents.FilledButton
-import com.example.Celestial.uicomponents.Footer
+import com.example.celestial.AppTextField
+import com.example.celestial.FilledButton
+import com.example.celestial.Footer
 
 
 @Composable

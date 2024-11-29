@@ -1,4 +1,4 @@
-package com.example.celestial.theme.type
+package com.example.celestial.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

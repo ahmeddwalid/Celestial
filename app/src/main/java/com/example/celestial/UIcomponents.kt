@@ -1,4 +1,4 @@
-package com.example.Celestial.uicomponents
+package com.example.celestial
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.ExperimentalFoundationApi

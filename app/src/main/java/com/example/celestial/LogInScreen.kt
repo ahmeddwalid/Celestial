@@ -1,4 +1,4 @@
-package com.example.Celestial.loginscreen
+package com.example.celestial
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -20,9 +20,6 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 import androidx.compose.ui.graphics.Color
-import com.example.Celestial.loginlogic.LoginViewModel
-import com.example.Celestial.uicomponents.AppTextField
-import com.example.Celestial.uicomponents.FilledButton
 
 
 @Composable

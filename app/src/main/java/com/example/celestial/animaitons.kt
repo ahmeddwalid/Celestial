@@ -1,4 +1,4 @@
-package com.example.Celestial.animations
+package com.example.celestial
 
 
 import androidx.compose.foundation.layout.size
