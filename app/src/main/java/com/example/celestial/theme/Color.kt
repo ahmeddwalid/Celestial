@@ -1,4 +1,4 @@
-package com.example.celestial.ui.theme
+package com.example.celestial.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,20 +1,22 @@
-package com.example.celestial
+package com.example.Celestial.loginlogic
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 
-class SignInLogic : ViewModel() {
+class LoginViewModel : ViewModel() {
     private val validCredentials = mapOf(
-        "mina@gmal.com" to "passgamed",
+        "mina@gmail.com" to "password0",
+        "ash@gmail.com" to "password1",
+        "mohanad@gmail.com" to "password2"
     )
 
     var email by mutableStateOf("")
     var password by mutableStateOf("")
     var errorMessage by mutableStateOf("")
-    var isEmailValid by mutableStateOf(true) // Tracks email validation state
-    var isPasswordValid by mutableStateOf(true) // Tracks password validation state
+    var isEmailValid by mutableStateOf(true)
+    var isPasswordValid by mutableStateOf(true)
 
     fun isEmailValid(email: String): Boolean {
         val emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$"
@@ -26,7 +28,7 @@ class SignInLogic : ViewModel() {
     }
 
     fun authenticate(): Boolean {
-        val username = email.trim().lowercase()
+        val username= email.trim().lowercase()
         val userPassword = password
         return if (validCredentials[username] == userPassword) {
             true

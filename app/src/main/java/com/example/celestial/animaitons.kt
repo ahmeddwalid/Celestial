@@ -1,4 +1,4 @@
-package com.example.celestial
+package com.example.Celestial.animations
 
 
 import androidx.compose.foundation.layout.size
@@ -11,7 +11,7 @@ import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.LottieConstants
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
-
+import com.example.celestial.R
 
 
 @Composable

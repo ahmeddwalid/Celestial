@@ -1,4 +1,4 @@
-package com.example.celestial
+package com.example.Celestial
 
 import androidx.lifecycle.ViewModel
 
