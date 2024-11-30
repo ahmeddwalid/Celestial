@@ -19,6 +19,8 @@ import androidx.navigation.NavController
 import com.example.celestial.AppTextField
 import com.example.celestial.FilledButton
 import com.example.celestial.Footer
+import com.example.celestial.theme.BackgroundColor
+import com.example.celestial.theme.TextColor
 
 
 @Composable
@@ -34,7 +36,7 @@ fun SignUpScreen(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .background(Color.Black)
+            .background(BackgroundColor)
             .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -44,7 +46,7 @@ fun SignUpScreen(navController: NavController) {
             style = TextStyle(
                 fontSize = 35.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.White
+                color = TextColor
             )
         )
         Spacer(modifier = Modifier.height(12.dp))
@@ -119,7 +121,7 @@ fun SignUpScreen(navController: NavController) {
         Footer(
             text = "Already have an Account?",
             textButton = "Login",
-            onClick = { navController.navigate("login_screen") }
+            onClick = { navController.popBackStack() }
         ) {
             Text(text = "Sign Up")
         }

@@ -18,7 +18,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.celestial.FilledButton
+import com.example.celestial.theme.BackgroundColor
 import com.example.celestial.theme.CelestialTheme
+import com.example.celestial.theme.TextColor
 
 
 @Composable
@@ -27,7 +29,7 @@ fun WelcomeScreen(navController: NavController) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .background(Color.Black),
+                .background(BackgroundColor),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -36,7 +38,7 @@ fun WelcomeScreen(navController: NavController) {
                 style = TextStyle(
                     fontSize = 27.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color.White
+                    color = TextColor
                 )
             )
 

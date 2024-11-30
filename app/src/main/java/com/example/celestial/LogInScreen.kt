@@ -20,6 +20,8 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 import androidx.compose.ui.graphics.Color
+import com.example.celestial.theme.BackgroundColor
+import com.example.celestial.theme.TextColor
 
 
 @Composable
@@ -30,7 +32,7 @@ fun LoginScreen(navController: NavController, loginViewModel: LoginViewModel) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.White),
+            .background(BackgroundColor),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -39,7 +41,7 @@ fun LoginScreen(navController: NavController, loginViewModel: LoginViewModel) {
             style = TextStyle(
                 fontSize = 35.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Black
+                color = TextColor
             )
         )
         Spacer(modifier = Modifier.height(45.dp))

@@ -47,6 +47,8 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.celestial.theme.PrimaryColor
+import com.example.celestial.theme.TextColor
 
 import kotlinx.coroutines.launch
 
@@ -54,7 +56,7 @@ import kotlinx.coroutines.launch
 fun BorderButton(
     modifier: Modifier = Modifier,
     text: String,
-    color: Color = Color.Blue,
+    color: Color = PrimaryColor,
     fontSize: Int = 16,
     onClick: () -> Unit
 ) {
@@ -70,7 +72,7 @@ fun BorderButton(
         Text(
             text = text,
             style = TextStyle(
-                color = color,
+                color = TextColor,
                 fontSize = fontSize.sp,
                 fontWeight = FontWeight.SemiBold
             )
@@ -90,14 +92,14 @@ fun FilledButton(
             .height(56.dp)
             .fillMaxWidth(),
         onClick = onClick,
-        colors = ButtonDefaults.buttonColors(Color.Blue),
+        colors = ButtonDefaults.buttonColors(PrimaryColor),
         shape = RoundedCornerShape(28.dp),
         elevation = null
     ) {
         Text(
             text = text,
             style = TextStyle(
-                color = Color.White,
+                color = TextColor,
                 fontSize = fontSize.sp,
                 fontWeight = FontWeight.SemiBold
             )
@@ -126,7 +128,7 @@ fun AppTextField(
         modifier = modifier
             .fillMaxWidth()
             .padding(horizontal = 30.dp)
-            .background(Color.Blue, RoundedCornerShape(rounded.dp))
+            .background(PrimaryColor, RoundedCornerShape(rounded.dp))
             .onFocusEvent { focusState ->
                 if (focusState.isFocused) {
                     coroutineScope.launch {
@@ -140,7 +142,7 @@ fun AppTextField(
             Text(
                 text = hint,
                 style = TextStyle(
-                    color = Color.White,
+                    color = TextColor,
                     fontSize = fontSize.sp,
                 )
             )
@@ -154,9 +156,8 @@ fun AppTextField(
                 focusManager.clearFocus()
             }
         ),
-        singleLine = true,
         textStyle = TextStyle(
-            color = Color.White,
+            color = TextColor,
             fontSize = fontSize.sp,
         ),
         visualTransformation = if (keyboardType == KeyboardType.Password) PasswordVisualTransformation() else VisualTransformation.None,
@@ -177,7 +178,7 @@ fun Footer(text: String, textButton: String, onClick: @Composable () -> Unit, fu
             text = text,
             style = TextStyle(
                 fontSize = 14.sp,
-                color = Color.White,
+                color = TextColor,
             )
         )
         TextButton(onClick = { onClick }) {
@@ -185,7 +186,7 @@ fun Footer(text: String, textButton: String, onClick: @Composable () -> Unit, fu
                 textButton,
                 style = TextStyle(
                     fontSize = 14.sp,
-                    color = Color.Blue,
+                    color = TextColor,
                     fontWeight = FontWeight.Bold
                 )
             )
